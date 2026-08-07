@@ -31,7 +31,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+  
 <style>
   :root{
     --paper: #f1f5f9;
@@ -434,14 +437,14 @@
             <!--<span class="status">[Under review]</span> <!-- or delete this span if published -->
           </div>
           <div>
-            <h3>High-Order Van Hove Singularities in Atomically Thin Kagome Metal LaTl3</h3>
+            <h3>High-Order Van Hove Singularities in Atomically Thin Kagome Metal LaTl$_3$</h3>
             <p class="authors"> Yuriy E Vekovshinin, Leonid V Bondarenko, Alexandra Y Tupchaya, Tatiana V Utas, 
               <span class="me">Edrick Wang</span>, Alexey N Mihalyuk, Dimitry V Gruznev, Andrey V Zotov, Alexander A Saranin</p>
             <p class="venue">ACS nano · 2025</p>
             <p class="abstract">
-              Here, we report the discovery of HOVHSs in the monolayer-thick kagome metal LaTl3 epitaxially 
+              Here, we report the discovery of HOVHSs in the monolayer-thick kagome metal LaTl$_3$ epitaxially 
               synthesized on the Si(111) substrate. The scanning tunneling microscopy observations and ab 
-              initio calculations indicate the kagome-like ordering of the LaTl3 layer, while the angle-resolved 
+              initio calculations indicate the kagome-like ordering of the LaTl$_3$ layer, while the angle-resolved 
               photoemission spectroscopy measurements and theoretical predictions uncover a rich and complex landscape 
               of various Van Hove singularities emerged in the system, including high-order ones, which can significantly 
               affect the anomalous Hall response and enable the unique high electron-correlation regime in the system.
@@ -483,7 +486,7 @@
             <p class="call-number">PUB.03</p>
           </div>
           <div>
-            <h3>Atomistic Origins of Conductance Switching in an ε-Cu0.9V2O5 Neuromorphic Single Crystal Oscillator</h3>
+            <h3>Atomistic Origins of Conductance Switching in an $\epsilon-Cu_{0.9}V_2O_5$ Neuromorphic Single Crystal Oscillator</h3>
             <p class="authors">John Ponis, Nicholas Jerla, George Agbeworvi, Saul Perez-Beltran, Nitin Kumar, 
               Kenna Ashen, Jialu Li, <span class="me">Edrick Wang</span>, Michelle A Smeaton, Fatme Jardali, Sarbajeet Chakraborty, 
               Patrick J Shamberger, Katherine L Jungjohann, Conan Weiland, Cherno Jaye, Lu Ma, Daniel Fischer, 
@@ -491,7 +494,7 @@
             <p class="venue">Journal of the American Chemical Society (JACS) · 2024</p>
             <p class="abstract">
               In this work, we unveil discontinuous conductance switching from an antiferromagnetic insulator 
-              to a paramagnetic metal in ε-Cu0.9V2O5. We observe superlattice 
+              to a paramagnetic metal in ε-Cu0.9V2O5$\epsilon-Cu_{0.9}V_2O_5$. We observe superlattice 
               ordering of Cu ions between [V4O10] layers at low temperatures, a direct result of interchain Cu-ion migration 
               and intrachain reorganization. The resulting charge and spin ordering along the vanadium oxide framework 
               stabilizes an insulating state. Understanding the mechanisms of 
@@ -579,5 +582,18 @@
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false},
+        {left: "\\(", right: "\\)", display: false},
+        {left: "\\[", right: "\\]", display: true}
+      ]
+    });
+  });
+</script>
+  
 </body>
 </html>
