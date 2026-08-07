@@ -1,0 +1,1 @@
+# edrick-afk.github.io
